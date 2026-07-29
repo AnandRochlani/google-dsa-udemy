@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+*.log
+renders/
+__pycache__/
+video-pipeline/*/work/
+video-pipeline/*/audio/
+video-pipeline/*/qa/
+video-pipeline/*/*.png
