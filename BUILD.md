@@ -1,258 +1,139 @@
 # BUILD — Crack the Google Coding Interview (Video Production)
 
-Source of truth for **video production scope + status**. Content comes from `problems/` + `scripts/` + `sessions/`, the render engine from `video-pipeline/lib_dsa.py` (ported from the Amazon course), the rules from the `lld-video` / `webdev-video` skills. Syllabus master: [`GOOGLE_LEETCODE_Course_Udemy.md`](./GOOGLE_LEETCODE_Course_Udemy.md).
+Source of truth for **video production scope + status**. Content comes from `problems/` + `scripts/`, the render engine from `video-pipeline/lib_dsa.py`, the rules from the `lld-video` / `webdev-video` skills. Syllabus master: [`GOOGLE_LEETCODE_Course_Udemy.md`](./GOOGLE_LEETCODE_Course_Udemy.md).
 
 ## Conventions
 
-- **Lesson id:** `LNN` (e.g. `L08`). Pipeline dir: `video-pipeline/l<nn>/`. Deliverable: `video-pipeline/l<nn>/GOOG_L<nn>.mp4`.
-- **Every lesson** obeys the retention rules (cold open on content, no static > 4 s, word-synced reveals, explainer-before-code, teacher-paced typing). See the `lld-video` skill.
-- **Coding lessons** use the dark IDE beat (Python primary, Java secondary). Conceptual lessons use light diagram primitives (array cells, pointers, trees, grids).
-- **Reusable visuals in `lib_dsa.py`:** `array_cells` (with two moving pointer arrows), `sliding_window` band, `linked_list` node chain, `binary_tree`, `grid` (for islands/BFS), `stack_column`, `heap_triangle`, `dp_table`.
-- Target length: **8–15 min** per lesson.
+- **Deliverable per problem:** `video-pipeline/<slug>/GOOG_<slug>.mp4`.
+- **Every lesson** obeys the retention rules (cold open, no static > 4 s, word-synced reveals, explainer-before-code, teacher-paced typing). See the `lld-video` skill.
+- **Reusable visuals in `lib_dsa.py`:** `array_cells`, `pointer_arrow`, `window_band`, `linked_list`, `binary_tree`, `grid`, `stack_column`, `heap_triangle`, `dp_table` + the pen set.
+- Target length: **10–14 min** per problem.
 
 ## Engine status
 
 | Piece | Status |
 |---|---|
-| `lib_dsa.py` (base: theme, motion, WordClock, `array_cells`, `pointer_arrow`, pen set) | ✅ **ported from Amazon course** |
-| `lib_dsa` DSA toolkit (`window_band`, `linked_list`, `binary_tree`, `grid`, `stack_column`, `heap_triangle`, `dp_table`) | ✅ available (ported) |
-| `gen_audio` + `scenes_all` + `qa_check` pattern | ⏳ reuse per-lesson (see `l08/scenes_l08.py` reference) |
+| `lib_dsa.py` (theme, motion, primitives, pen set) | ✅ ported from Amazon course |
+| `gen_audio` + `scenes_all` + `qa_check` pattern | ⏳ reuse per-lesson |
 
 ## Status legend
-`⬜ not started` · `📝 script written` · `🎙️ audio` · `🎬 scenes` · `🟩 rendered` · `✅ QA-passed`
+`⬜ not started` · `📝 write-up + script ready` · `🎙️ audio` · `🎬 scenes` · `🟩 rendered` · `✅ QA-passed`
 
-> **Where we are:** all 96 problem write-ups (`problems/`) and recording scripts (`scripts/`) are written, and the render engine is ported. Videos are produced **in syllabus order**, one section at a time, starting with L08. Below, `📝` = script + problem write-up ready; `⬜` = video not yet rendered.
+> **Where we are:** the 50 problem write-ups (`problems/`) and recording scripts (`scripts/`) are being authored section by section (4 reused from the Amazon course: Text Justification, Longest Increasing Path, Meeting Rooms II, Logger Rate Limiter). Video rendering is the next phase, in syllabus order. `📝` = write-up + script ready; `⬜` = video not yet rendered.
 
 ---
 
-## Section 0 — Orientation *(conceptual; base engine only)*
+## Section 1 — Strings & Parsing
 
-| id | Title | Status | Notes |
-|---|---|---|---|
-| L00 | What You'll Master + How to Use This Course | 📝 script | `sessions/L00_Course_Overview.md` written. Theory-only, ~5 min. |
-| L01 | Inside the Google Loop | ⬜ | Phone screen → onsite → hiring committee → team match. Timeline diagram. |
-| L02 | Think-Out-Loud — The 6-Step Framework | 📝 script | `sessions/L02_Six_Step_Framework.md` written. The narration spine (and GCA signal) for every later lesson. |
+| LC | Problem | Status |
+|----|---------|--------|
+| 68 | Text Justification | 📝 (reference lesson) |
+| 418 | Sentence Screen Fitting | 📝 |
+| 833 | Find And Replace in String | 📝 |
+| 777 | Swap Adjacent in LR String | 📝 |
+| 1554 | Strings Differ by One Character | 📝 |
+| 792 | Number of Matching Subsequences | 📝 |
+| 2135 | Count Words Obtained After Adding a Letter | 📝 |
+| 539 | Minimum Time Difference | 📝 |
+| 1055 | Shortest Way to Form String | 📝 |
+| 2018 | Check if Word Can Be Placed In Crossword | 📝 |
 
-## Section 1 — Complexity & The Toolbox
+## Section 2 — Tries
 
-| id | Title | Status | Notes |
-|---|---|---|---|
-| L03 | Big-O in Plain English | ⬜ | Growth-curve animation; O(n²) vs O(n) race. |
-| L04 | The Hash Map | ⬜ | Buckets animation; the "seen" set trick. |
-| L05 | Arrays & Strings | ⬜ | In-place, index math, off-by-one. |
-| L06 | Stacks & Queues | ⬜ | LIFO/FIFO columns. |
-| L07 | Recursion & The Call Stack | ⬜ | Stack-frames visual. |
+| LC | Problem | Status |
+|----|---------|--------|
+| 2416 | Sum of Prefix Scores of Strings | 📝 |
 
-## Section 2 — Two Pointers  📝 **scripts ready — current build target**
+## Section 3 — Graphs & Grids
 
-Engine: `lib_dsa.py` (native 1080p). Reference scene: `video-pipeline/l08/scenes_l08.py`.
+| LC | Problem | Status |
+|----|---------|--------|
+| 1293 | Shortest Path in a Grid with Obstacles Elimination | 📝 |
+| 778 | Swim in Rising Water | 📝 |
+| 2101 | Detonate the Maximum Bombs | 📝 |
+| 419 | Battleships in a Board | 📝 |
+| 562 | Longest Line of Consecutive One in Matrix | 📝 |
+| 2128 | Remove All Ones With Row and Column Flips | 📝 |
+| 329 | Longest Increasing Path in a Matrix | 📝 |
+| 2242 | Maximum Score of a Node Sequence | 📝 |
 
-| id | Title | Status | Notes |
-|---|---|---|---|
-| L08 | The Two-Pointer Idea — Pair with Target Sum | 📝 **script + reference scene** | Reference lesson every other pattern lesson is cloned from. `scenes_l08.py`. |
-| L09 | Valid Palindrome | 📝 script | Both-ends squeeze, char cells. |
-| L10 | Remove Duplicates In-Place | 📝 script | Slow/fast write pointer. |
-| L11 | 3Sum | 📝 script | Sort + fix-one + two-pointer. |
-| L12 | Container With Most Water | 📝 script | Bar chart + water shading, move shorter wall. |
-| L13 | Sort Colors (Dutch flag) | 📝 script | Three pointers, color regions. |
+## Section 4 — Union-Find
 
-## Section 3 — Sliding Window  📝
+| LC | Problem | Status |
+|----|---------|--------|
+| 1101 | The Earliest Moment When Everyone Become Friends | 📝 |
+| 839 | Similar String Groups | 📝 |
+| 2421 | Number of Good Paths | 📝 |
 
-| id | Title | Status |
-|---|---|---|
-| L14 | Maximum Average Subarray (fixed window) | 📝 script |
-| L15 | Minimum Size Subarray Sum (dynamic window) | 📝 script |
-| L16 | Longest Substring Without Repeating | 📝 script |
-| L17 | Longest Repeating Character Replacement | 📝 script |
-| L18 | Permutation in String | 📝 script |
-| L19 | Minimum Window Substring (hard) | 📝 script |
+## Section 5 — Topological Sort
 
-## Section 4 — Fast & Slow Pointers  📝
+| LC | Problem | Status |
+|----|---------|--------|
+| 2115 | Find All Possible Recipes from Given Supplies | 📝 |
 
-| id | Title | Status |
-|---|---|---|
-| L21 | Linked List Cycle | 📝 script |
-| L22 | Linked List Cycle II (find start) | 📝 script |
-| L23 | Middle of the Linked List | 📝 script |
-| L24 | Happy Number | 📝 script |
+## Section 6 — Trees
 
-## Section 5 — Linked-List In-Place Reversal  📝
+| LC | Problem | Status |
+|----|---------|--------|
+| 2096 | Step-By-Step Directions From a Binary Tree Node to Another | 📝 |
+| 366 | Find Leaves of Binary Tree | 📝 |
 
-| id | Title | Status |
-|---|---|---|
-| L25 | Reverse Linked List | 📝 script |
-| L26 | Reverse Linked List II (sublist) | 📝 script |
-| L27 | Reverse Nodes in k-Group (hard) | 📝 script |
-| L28 | Reorder List (middle + reverse + merge) | 📝 script |
+## Section 7 — Heaps, Intervals & Scheduling
 
-## Section 6 — Stacks  📝
+| LC | Problem | Status |
+|----|---------|--------|
+| 253 | Meeting Rooms II | 📝 |
+| 2402 | Meeting Rooms III | 📝 |
+| 1606 | Find Servers That Handled Most Number of Requests | 📝 |
+| 729 | My Calendar I | 📝 |
+| 2158 | Amount of New Area Painted Each Day | 📝 |
+| 1996 | The Number of Weak Characters in the Game | 📝 |
+| 715 | Range Module | 📝 |
 
-| id | Title | Status |
-|---|---|---|
-| L29 | Valid Parentheses | 📝 script |
-| L30 | Min Stack (O(1) getMin) | 📝 script |
-| L31 | Next Greater Element (monotonic) | 📝 script |
-| L32 | Daily Temperatures (monotonic) | 📝 script |
-| L33 | Largest Rectangle in Histogram (hard) | 📝 script |
+## Section 8 — Design (Implement-a-Class)
 
-## Section 7 — Modified Binary Search  📝
+| LC | Problem | Status |
+|----|---------|--------|
+| 528 | Random Pick with Weight | 📝 |
+| 900 | RLE Iterator | 📝 |
+| 1146 | Snapshot Array | 📝 |
+| 2013 | Detect Squares | 📝 |
+| 2034 | Stock Price Fluctuation | 📝 |
+| 359 | Logger Rate Limiter | 📝 |
+| 2162 | Minimum Cost to Set Cooking Time | 📝 |
 
-| id | Title | Status |
-|---|---|---|
-| L34 | Binary Search (template) | 📝 script |
-| L35 | Search in Rotated Sorted Array | 📝 script |
-| L36 | First Bad Version (boundary) | 📝 script |
-| L37 | Search a 2D Matrix | 📝 script |
-| L38 | Koko Eating Bananas (search the answer) | 📝 script |
-| L39 | Median of Two Sorted Arrays (hard, partition) | 📝 script |
+## Section 9 — Dynamic Programming
 
-## Section 8 — Trees: BFS  📝
+| LC | Problem | Status |
+|----|---------|--------|
+| 1937 | Maximum Number of Points with Cost | 📝 |
+| 552 | Student Attendance Record II | 📝 |
+| 1105 | Filling Bookcase Shelves | 📝 |
+| 818 | Race Car | 📝 |
+| 1048 | Longest String Chain | 📝 |
+| 1387 | Sort Integers by The Power Value | 📝 |
+| 2172 | Maximum AND Sum of Array | 📝 |
 
-| id | Title | Status |
-|---|---|---|
-| L40 | Level Order Traversal | 📝 script |
-| L41 | Zigzag Level Order | 📝 script |
-| L42 | Right Side View | 📝 script |
-| L43 | Minimum Depth | 📝 script |
-| L44 | Populating Next Right Pointers | 📝 script |
+## Section 10 — Backtracking & Interactive
 
-## Section 9 — Trees: DFS  📝
+| LC | Problem | Status |
+|----|---------|--------|
+| 489 | Robot Room Cleaner | 📝 |
+| 843 | Guess the Word | 📝 |
 
-| id | Title | Status |
-|---|---|---|
-| L45 | Maximum Depth | 📝 script |
-| L46 | Path Sum | 📝 script |
-| L47 | Binary Tree Paths (all root-to-leaf) | 📝 script |
-| L48 | Diameter of Binary Tree | 📝 script |
-| L49 | Validate BST | 📝 script |
-| L50 | Lowest Common Ancestor | 📝 script |
+## Section 11 — Geometry & Math
 
-## Section 10 — Graphs (grids & nodes)  📝
-
-| id | Title | Status |
-|---|---|---|
-| L51 | Number of Islands | 📝 script |
-| L52 | Rotting Oranges (multi-source BFS) | 📝 script |
-| L53 | Flood Fill | 📝 script |
-| L54 | Clone Graph | 📝 script |
-| L55 | 01 Matrix (multi-source BFS) | 📝 script |
-| L56 | Word Ladder (hard, BFS word graph) | 📝 script |
-
-## Section 11 — Topological Sort  📝
-
-| id | Title | Status |
-|---|---|---|
-| L58 | Course Schedule (Kahn's BFS) | 📝 script |
-| L59 | Course Schedule II (return the order) | 📝 script |
-| L60 | Alien Dictionary (hard) | 📝 script |
-| L61 | Minimum Height Trees (leaf trimming) | 📝 script |
-
-## Section 12 — Heaps & Top-K  📝
-
-| id | Title | Status |
-|---|---|---|
-| L62 | Kth Largest Element | 📝 script |
-| L63 | Top K Frequent Elements | 📝 script |
-| L64 | K Closest Points to Origin | 📝 script |
-| L65 | Merge k Sorted Lists (hard) | 📝 script |
-| L66 | Find Median from Data Stream (two heaps, hard) | 📝 script |
-| L67 | Task Scheduler | 📝 script |
-
-## Section 13 — Subsets & Backtracking  📝
-
-| id | Title | Status |
-|---|---|---|
-| L68 | Subsets (the template) | 📝 script |
-| L69 | Permutations | 📝 script |
-| L70 | Combination Sum | 📝 script |
-| L71 | Letter Combinations | 📝 script |
-| L72 | Word Search | 📝 script |
-| L73 | Generate Parentheses | 📝 script |
-| L74 | N-Queens (hard) | 📝 script |
-
-## Section 14 — Dynamic Programming  📝
-
-| id | Title | Status |
-|---|---|---|
-| L75 | Climbing Stairs (DP on-ramp) | 📝 script |
-| L76 | House Robber | 📝 script |
-| L77 | Coin Change | 📝 script |
-| L78 | Longest Increasing Subsequence | 📝 script |
-| L79 | Partition Equal Subset Sum | 📝 script |
-| L80 | Longest Common Subsequence | 📝 script |
-| L81 | Edit Distance (hard) | 📝 script |
-| L82 | Unique Paths | 📝 script |
-| L83 | Word Break | 📝 script |
-| L84 | Best Time to Buy & Sell Stock | 📝 script |
-
-## Section 15 — Greedy & Intervals  📝
-
-| id | Title | Status |
-|---|---|---|
-| L85 | Merge Intervals | 📝 script |
-| L86 | Insert Interval | 📝 script |
-| L87 | Non-overlapping Intervals | 📝 script |
-| L88 | Meeting Rooms II | 📝 script |
-| L89 | Jump Game | 📝 script |
-
-## Section 16 — Tries & Union-Find  📝
-
-| id | Title | Status |
-|---|---|---|
-| L90 | Implement Trie (Prefix Tree) | 📝 script |
-| L91 | Word Search II (Trie + DFS) | 📝 script |
-| L92 | Number of Provinces (Union-Find intro) | 📝 script |
-| L93 | Redundant Connection (cycle detect) | 📝 script |
-| L94 | Accounts Merge | 📝 script |
-
-## Section 17 — Google Design Problems  📝
-
-| id | Title | Status |
-|---|---|---|
-| L95 | LRU Cache | 📝 script |
-| L96 | LFU Cache | 📝 script |
-| L97 | Design HashMap | 📝 script |
-| L98 | Insert Delete GetRandom O(1) | 📝 script |
-| L99 | Logger Rate Limiter | 📝 script |
-
-## Section 18 — Google Most-Asked Rapid-Fire  📝
-
-| id | Title | Status |
-|---|---|---|
-| L100 | Two Sum | 📝 script |
-| L101 | Product of Array Except Self | 📝 script |
-| L102 | Copy List with Random Pointer | 📝 script |
-| L103 | Max Area of Island | 📝 script |
-| L104 | Group Anagrams | 📝 script |
-| L105 | Trapping Rain Water | 📝 script |
-
-## Section 19 — Google Signature Problems  📝
-
-| id | Title | Status |
-|---|---|---|
-| L111 | Text Justification (hard) | 📝 script |
-| L112 | Decode String | 📝 script |
-| L113 | Longest Increasing Path in a Matrix (hard) | 📝 script |
-| L114 | Subarray Sum Equals K | 📝 script |
-| L115 | Time-Based Key-Value Store | 📝 script |
-| L116 | Longest Palindromic Substring | 📝 script |
-
-## Section 20 — Mock Interviews & Behavioral
-
-| id | Title | Status |
-|---|---|---|
-| L106 | Mock Interview 1 — Sliding Window (narrated end-to-end) | ⬜ |
-| L107 | Mock Interview 2 — Merge k Sorted Lists (heap + follow-up) | ⬜ |
-| L108 | Google's Four Attributes — GCA, RRK, Leadership & Googleyness | ⬜ |
-| L109 | STAR Stories — 6 reusable behavioral answers | ⬜ |
-| L110 | Your 4-Week Plan + night-before + course send-off | ⬜ |
+| LC | Problem | Status |
+|----|---------|--------|
+| 1610 | Maximum Number of Visible Points | 📝 |
+| 2178 | Maximum Split of Positive Even Integers | 📝 |
 
 ---
 
 ## Current build target
 
-**▶ L08 — The Two-Pointer Idea (Pair with Target Sum).** The engine (`lib_dsa.py`) and the reference scene (`l08/scenes_l08.py`) are in place. Next actions per lesson: finalize script → gen audio → scenes → render → QA loop. L08 is the reference lesson every other pattern lesson is cloned from.
+**▶ Section 1 — Strings & Parsing**, starting with **Text Justification (68)** as the reference lesson. Per lesson: finalize script → gen audio → scenes → render → QA loop.
 
 ## Build order
 
-Ship **in syllabus order**, one section at a time, mirroring the Amazon/LLD cadence: Section 0 (conceptual, base engine) → Section 2 (Two Pointers) → onward. Conceptual lessons (Section 0–1) can render on the base engine.
+Ship **in syllabus order**, one section at a time. The engine (`lib_dsa.py`) is ready; render Section 1 first (it reuses `array_cells` + the pen set), then onward.
