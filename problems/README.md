@@ -1,6 +1,6 @@
 # Problems — Intuition-First Solutions, Grouped by Pattern
 
-96 Google-tagged LeetCode problems, one file each. Every file walks the **same path a strong candidate walks in the room**:
+102 Google-tagged LeetCode problems, one file each. Every file walks the **same path a strong candidate walks in the room**:
 
 > 🧠 **Intuition** (how you arrive at each approach) → ① **Brute Force** (and why it times out) → ② **Optimised Solution** (the pattern) → ③ **Space Optimization** (or "already optimal — here's why") → Java → complexity table → interview narration → related problems.
 
@@ -61,6 +61,9 @@ Use the [`_TEMPLATE.md`](./_TEMPLATE.md) to add more. The gold-standard example 
 ### 18 · Google Most-Asked Rapid-Fire
 - [Two Sum](./18-google-rapid-fire/two-sum.md) · [Group Anagrams](./18-google-rapid-fire/group-anagrams.md) · [Product of Array Except Self](./18-google-rapid-fire/product-except-self.md) · [Copy List with Random Pointer](./18-google-rapid-fire/copy-list-random-pointer.md) · [Max Area of Island](./18-google-rapid-fire/max-area-of-island.md) · [Trapping Rain Water](./18-google-rapid-fire/trapping-rain-water.md)
 
+### 19 · Google Signature Problems
+- [Text Justification](./19-google-signature/text-justification.md) · [Decode String](./19-google-signature/decode-string.md) · [Longest Increasing Path in a Matrix](./19-google-signature/longest-increasing-path-in-matrix.md) · [Subarray Sum Equals K](./19-google-signature/subarray-sum-equals-k.md) · [Time-Based Key-Value Store](./19-google-signature/time-based-key-value-store.md) · [Longest Palindromic Substring](./19-google-signature/longest-palindromic-substring.md)
+
 ---
 
-**96 problems · 15 patterns.** Work them in folder order — each pattern builds on the last. For a 4-week plan, see [`../resources/Google_Top_50_Problem_List.md`](../resources/Google_Top_50_Problem_List.md).
+**102 problems · 15 patterns + Google signature set.** Work them in folder order — each pattern builds on the last. For a 4-week plan, see [`../resources/Google_Top_50_Problem_List.md`](../resources/Google_Top_50_Problem_List.md).

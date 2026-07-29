@@ -1,6 +1,6 @@
 # Recording Scripts — Retention-Optimized, Two-Voice
 
-96 video recording scripts, one per problem, mirroring `problems/`. Each is a **spoken teaching script** engineered for retention, following [`_SCRIPT_TEMPLATE.md`](./_SCRIPT_TEMPLATE.md).
+102 video recording scripts, one per problem, mirroring `problems/`. Each is a **spoken teaching script** engineered for retention, following [`_SCRIPT_TEMPLATE.md`](./_SCRIPT_TEMPLATE.md).
 
 **Every script:**
 - Runs the **14-beat structure** — cold-open hook → concrete tiny example → **hand dry-run** to build intuition → predict-first pause → the aha → **live chunked coding** → **why-focused code explanation** → code dry-run → complexity → space → active recall → memory peg → cliffhanger.
@@ -9,7 +9,7 @@
 
 **Grounded in learning science:** curiosity gaps (Zeigarnik), the generation effect (predict-first), worked examples, dual coding, cognitive-load management, vicarious learning (the two-voice dialogue), and retrieval practice. See the template for the full principle-to-beat mapping.
 
-**Total:** 96 scripts · ~**22 hours** of video at ~14 min average. Audience: college students + working IT professionals.
+**Total:** 102 scripts · ~**22 hours** of video at ~14 min average. Audience: college students + working IT professionals.
 
 The gold-standard exemplar is [`02-two-pointers/3sum.md`](./02-two-pointers/3sum.md). The foundational first lesson is [`02-two-pointers/pair-with-target-sum.md`](./02-two-pointers/pair-with-target-sum.md).
 
@@ -34,6 +34,7 @@ The gold-standard exemplar is [`02-two-pointers/3sum.md`](./02-two-pointers/3sum
 - **16 · Tries & Union-Find** — implement-trie · word-search-ii · number-of-provinces · redundant-connection · accounts-merge
 - **17 · Design** — lru-cache · lfu-cache · design-hashmap · insert-delete-getrandom · logger-rate-limiter
 - **18 · Google Rapid-Fire** — two-sum · group-anagrams · product-except-self · copy-list-random-pointer · max-area-of-island · trapping-rain-water
+- **19 · Google Signature** — text-justification · decode-string · longest-increasing-path-in-matrix · subarray-sum-equals-k · time-based-key-value-store · longest-palindromic-substring
 
 ---
 
