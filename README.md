@@ -63,7 +63,9 @@ Mirrors the `aamzon-dsa-udemy` / `LLD-Udemy` pipeline:
 
 ## Status
 
-🚧 **Content in progress.** Syllabus, cheat sheets, and the 11-section structure are in place; the `problems/` and `scripts/` libraries are being authored problem-by-problem (the 4 problems shared with the Amazon course — Text Justification, Longest Increasing Path, Meeting Rooms II, Logger Rate Limiter — are reused). See `BUILD.md` for the live board.
+✅ **Content complete.** Syllabus, cheat sheets, and the 11-section structure are in place, and all **50 problems now have both a write-up and a recording script** (the 4 problems shared with the Amazon course — Text Justification, Longest Increasing Path, Meeting Rooms II, Logger Rate Limiter — are reused).
+
+🚧 **Video production is the open phase** — 0 of 50 rendered. See `BUILD.md` for the live board.
 
 ---
 

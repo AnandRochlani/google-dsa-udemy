@@ -6,11 +6,13 @@ Source of truth for **content + video production status**. Content comes from `p
 
 | Layer | Done | Total |
 |---|---|---|
-| **Problem write-ups** (`problems/`) | **37** | 50 |
-| **Recording scripts** (`scripts/`) | **30** | 50 |
+| **Problem write-ups** (`problems/`) | **50** | 50 |
+| **Recording scripts** (`scripts/`) | **50** | 50 |
 | **Videos rendered** | 0 | 50 |
 
-> Content is authored in waves of parallel agents. Waves 1 & 2 (Sections 1–6 + geometry) are fully done. Wave 3 (Sections 7–8) was interrupted by a session usage limit mid-run: its 9 write-ups landed, but 7 of the matching scripts + 3 problems are still to do. Wave 4 (Sections 9–10 + one geometry) has not started. See the per-problem board below.
+> ✅ **Authoring is complete.** All 50 problems have a write-up *and* a matching recording script, across all 11 sections. Verified: 50 files in `problems/`, 50 in `scripts/`, one-to-one by filename with zero orphans on either side; every write-up carries all required template sections; every script carries ≥14 `[VISUAL: …]` cues and the two-voice format.
+>
+> **Next phase is video production** — nothing has been rendered yet. See "What's left" at the bottom.
 
 ## Status legend
 `✅ write-up + script done` · `📝 write-up done · script pending` · `⬜ not started` — then video stages: `🎙️ audio · 🎬 scenes · 🟩 rendered · ✅QA`
@@ -75,66 +77,72 @@ Source of truth for **content + video production status**. Content comes from `p
 | 2096 | Step-By-Step Directions From a Binary Tree Node to Another | ✅ |
 | 366 | Find Leaves of Binary Tree | ✅ |
 
-## Section 7 — Heaps, Intervals & Scheduling  🚧 **write-ups 6/7 · scripts 3/7**
+## Section 7 — Heaps, Intervals & Scheduling  ✅ **complete (7/7)**
 
 | LC | Problem | Status |
 |----|---------|--------|
 | 253 | Meeting Rooms II | ✅ |
+| 2402 | Meeting Rooms III | ✅ |
 | 1606 | Find Servers That Handled Most Number of Requests | ✅ |
 | 729 | My Calendar I | ✅ |
-| 2402 | Meeting Rooms III | 📝 write-up done · script pending |
-| 2158 | Amount of New Area Painted Each Day | 📝 write-up done · script pending |
-| 1996 | The Number of Weak Characters in the Game | 📝 write-up done · script pending |
-| 715 | Range Module | ⬜ not started |
+| 2158 | Amount of New Area Painted Each Day | ✅ |
+| 1996 | The Number of Weak Characters in the Game | ✅ |
+| 715 | Range Module | ✅ |
 
-## Section 8 — Design (Implement-a-Class)  🚧 **write-ups 5/7 · scripts 1/7**
+## Section 8 — Design (Implement-a-Class)  ✅ **complete (7/7)**
 
 | LC | Problem | Status |
 |----|---------|--------|
+| 528 | Random Pick with Weight | ✅ |
+| 900 | RLE Iterator | ✅ |
+| 1146 | Snapshot Array | ✅ |
+| 2013 | Detect Squares | ✅ |
+| 2034 | Stock Price Fluctuation | ✅ |
 | 359 | Logger Rate Limiter | ✅ |
-| 528 | Random Pick with Weight | 📝 write-up done · script pending |
-| 900 | RLE Iterator | 📝 write-up done · script pending |
-| 1146 | Snapshot Array | 📝 write-up done · script pending |
-| 2013 | Detect Squares | 📝 write-up done · script pending |
-| 2034 | Stock Price Fluctuation | ⬜ not started |
-| 2162 | Minimum Cost to Set Cooking Time | ⬜ not started |
+| 2162 | Minimum Cost to Set Cooking Time | ✅ |
 
-## Section 9 — Dynamic Programming  ⬜ **not started (0/7)**
+## Section 9 — Dynamic Programming  ✅ **complete (7/7)**
 
 | LC | Problem | Status |
 |----|---------|--------|
-| 1937 | Maximum Number of Points with Cost | ⬜ |
-| 552 | Student Attendance Record II | ⬜ |
-| 1105 | Filling Bookcase Shelves | ⬜ |
-| 818 | Race Car | ⬜ |
-| 1048 | Longest String Chain | ⬜ |
-| 1387 | Sort Integers by The Power Value | ⬜ |
-| 2172 | Maximum AND Sum of Array | ⬜ |
+| 1937 | Maximum Number of Points with Cost | ✅ |
+| 552 | Student Attendance Record II | ✅ |
+| 1105 | Filling Bookcase Shelves | ✅ |
+| 818 | Race Car | ✅ |
+| 1048 | Longest String Chain | ✅ |
+| 1387 | Sort Integers by The Power Value | ✅ |
+| 2172 | Maximum AND Sum of Array | ✅ |
 
-## Section 10 — Backtracking & Interactive  ⬜ **not started (0/2)**
+## Section 10 — Backtracking & Interactive  ✅ **complete (2/2)**
 
 | LC | Problem | Status |
 |----|---------|--------|
-| 489 | Robot Room Cleaner | ⬜ |
-| 843 | Guess the Word | ⬜ |
+| 489 | Robot Room Cleaner | ✅ |
+| 843 | Guess the Word | ✅ |
 
-## Section 11 — Geometry & Math  🚧 **write-ups 1/2 · scripts 1/2**
+## Section 11 — Geometry & Math  ✅ **complete (2/2)**
 
 | LC | Problem | Status |
 |----|---------|--------|
 | 1610 | Maximum Number of Visible Points | ✅ |
-| 2178 | Maximum Split of Positive Even Integers | ⬜ not started |
+| 2178 | Maximum Split of Positive Even Integers | ✅ |
 
 ---
 
-## ⏭️ What's left (to finish the 50)
+## ⏭️ What's left
 
-1. **7 scripts** for write-ups that already exist (Section 7: Meeting Rooms III, Amount of New Area Painted, Weak Characters · Section 8: Random Pick with Weight, RLE Iterator, Snapshot Array, Detect Squares).
-2. **3 full problems** (write-up + script): Range Module (715), Stock Price Fluctuation (2034), Minimum Cost to Set Cooking Time (2162).
-3. **Section 9 — Dynamic Programming** (7 problems + scripts).
-4. **Section 10 — Backtracking & Interactive** (2 problems + scripts).
-5. **Section 11** — Maximum Split of Positive Even Integers (2178): write-up + script.
+Authoring is done. Everything remaining is **video production** — 0 of 50 rendered.
 
-**Then:** video rendering, in syllabus order, starting with Section 1.
+1. **Render the 50 lessons in syllabus order**, starting with Section 1 / Text Justification. Per lesson: build `video-pipeline/lNN/` → `gen_audio` → `scenes_all` (storyboarded from the script's `[VISUAL: …]` cues) → render → `qa_check`.
+2. **Decide what happens to `sessions/`.** It holds three lessons that are not part of the 50: `L00_Course_Overview` and `L02_Six_Step_Framework` (Section 0 orientation — not in the syllabus), and `L08_Two_Pointers_Pair_Sum` (carryover from the Amazon course; Two Sum II is not on the Google list). Either promote the two orientation lessons into the syllabus as a Section 0, or drop all three. `video-pipeline/l08/scenes_l08.py` belongs to that carryover lesson and is currently the engine's only reference scene.
+3. **Optional polish:** `scripts/07-heaps-intervals/meeting-rooms-ii.md` and `scripts/08-design/logger-rate-limiter.md` each carry only 2 LEARNER interjections against the template's 3–5. Both are reused Amazon-course lessons; a short pass would bring them in line.
 
-> Note: authoring paused on a session usage limit (resets 11:10 pm UTC). Resume by re-running the remaining waves.
+### Authoring QA — how the 50 were verified
+
+Content was authored in waves of parallel agents, the last wave completing Sections 7–11. Verification actually run against the finished files (not assumed):
+
+- 50 write-ups ↔ 50 scripts, matched one-to-one by filename, zero orphans in either direction.
+- Every write-up contains all required template sections (Problem, Intuition, ① Brute Force, ② Optimised, ③ Space, Java, Complexity Summary).
+- Every script carries ≥14 `[VISUAL: …]` cues, 3–5 LEARNER interjections, and ≥2 pause-and-predict beats (two pre-existing exceptions noted above).
+- For the final wave, every Python and Java block was **extracted from the shipped markdown and executed**, cross-checked against brute force on randomized inputs, and the chunked live-coding blocks were concatenated in narration order to confirm they assemble into a working solution.
+- All index links in `problems/README.md` and `scripts/README.md` resolve.
